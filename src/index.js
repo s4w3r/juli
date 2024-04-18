@@ -1,15 +1,39 @@
 import React from "react";
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client";
+import Card from "./componentes/card";
 
-const nombre = 'Julian'
-const user ={
+const root = ReactDOM.createRoot(
+
+  document.getElementById('root')
+
+)
+
+root.render(<Card 
+  nombre= "Bingo"
+  edad = "9"
+  color = "#d4994b"
+
+  />)
+
+
+
+
+
+/* const user ={
     Nombre: 'Julian',
     Apellido:'Rey',
-    Edad: 20
-  
+    Edad: 20,
+    avatar: 'https://i.pinimg.com/736x/66/30/83/66308353adca12827d25d96e60ae3fd6.jpg'  
 }
-const element = <h1>Hello, {user.Nombre+''+ user.Nombre+''+ user.Edad}</h1>
 
-const contenedor = document.getElementById('root')
+function name(user) {
+   return user.Nombre +''+ user.Apellido +''+ user.Edad
+} 
 
-ReactDOM.render(element,contenedor)
+
+const element =(
+  <div>
+   <h1>Hello, {name(user)}</h1>
+   <img src={user.avatar}/>
+  </div>
+) */
