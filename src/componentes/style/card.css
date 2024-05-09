@@ -1,26 +1,29 @@
 .card{
-    margin: 10%;
+    height: auto;
+    width: 700px;
 
 
 }
 
 .back{
-    background-color: #faebd7;
-    border-radius: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 4px 6px 5px #808080;
 
 }
 
 .font{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    text-align: center;
+    margin-left: 2%;
 
 }
 
 .porta{
-    height: 300px;
-    margin-left: 31%;
+    height: 200px;
+    margin-left: 20%;
     border-radius: 50px;
     display: flex;
+    border-radius: 80% ;
 
 }

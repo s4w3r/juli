@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Card from "./componentes/card";
+import App from './componentes/App';
 
 const root = ReactDOM.createRoot(
 
@@ -8,12 +8,9 @@ const root = ReactDOM.createRoot(
 
 )
 
-root.render(<Card 
-  nombre= "Bingo"
-  edad = "9"
-  color = "#d4994b"
-
-  />)
+root.render(
+  <App/>
+)
 
 
 

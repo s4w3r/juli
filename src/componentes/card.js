@@ -1,22 +1,31 @@
 import React from "react";
-import bingo from "./image/bingo.jpg";
 import "./style/card.css"
-
+/* import img from '../componentes/image/Bingo.webp'; */
 
 
 class Card extends React.Component{
-
+/*     constructor(props){
+        super(props)
+        this.state={
+            nimage:'https://i.pinimg.com/736x/dc/cb/e7/dccbe770e822e1f4f7337aba88548f09.jpg'
+        }
+    }
+    componentDidMount(){
+        setTimeout(()=>{
+            this.setState({
+                nimage:img
+            })
+        },3000)
+    } */
     render(){
-    const {nombre,edad,color}=this.props
+    const {nombre,descripcion,img}=this.props
         return (
         <div className="card back">
-         <div className="font">
-            <h1 style={{color:`${color}`}}>Hola, {nombre} tu edad es {edad}.</h1>
-         </div>
-         <div >
-            <img src={bingo} className="porta" alt=""/>
-         </div>
+            <h1>{nombre}</h1>
+            <p>{descripcion}</p>
+            <img src={img} className="porta" alt=""/>
         </div>
+        
     )
       
 }
